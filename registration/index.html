@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>registration form</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>Registration</h1>
+            <p>Enter your registration information for creating your account</p>
+            <form>
+                <table>
+                    <tr>
+                        <td><label for="first-name"><b> First Name : </b></label></td>
+                        <td><input type="text" id="first-name" placeholder="Enter your first name " pattern="[a-zA-Z]+"
+                                title="only characters are allowed wihtout space" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="last-name"><b>Last Name : </b></label></td>
+                        <td><input type="text" id="last-name" placeholder="Enter your last name " pattern="[a-zA-Z]+"
+                                title="only characters are allowed wihtout space" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="full-name"><b>Full Name : </b></label></td>
+                        <td><input type="text" id="full-name" placeholder="Enter your full name " pattern="[a-zA-Z\s]+"
+                                title="only character are allowed and use space for separation" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="user-name"><b>User Name : </b></label></td>
+                        <td><input type="text" id="user-name" placeholder="Create your user name" pattern="[a-zA-Z/d]+"
+                                title="only character and digit are allowed " required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="number"><b>Phone Number : </b></label></td>
+                        <td><input type="tel" id="number" placeholder="Enter your mobile number"
+                                pattern="[7-9]{1}[0-9]{9}" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Email"><b>E-mail : </b></label></td>
+                        <td><input type="email" id="Email" placeholder="Enter your email address" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="pass"><b>Password :</b></label></td>
+                        <td><input type="password" id="pass" placeholder="Enter a strong password"
+                                pattern="(?=.*[!@#$%^&*-+=_])(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{8,}"
+                                title="must contain one capitaln and small letter with atlist one digit and special charature with 8 digit and no space"
+                                required></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div><b>Gender</b></div>
+                        </td>
+                        <td><label for="male"><b>Male</b></label>
+                            <input type="radio" name="gen" id="male" value="Male" required>
+                            <label for="Female"><b>Female</b></label>
+                            <input type="radio" name="gen" id="Female" value="Female" required>
+                            <label for="other"><b>other</b></label>
+                            <input type="radio" name="gen" id="other" value="other" required>
+                        </td>
+                    </tr>
+            </form>
+        </div>
+        </table>
+        <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+        <button type="submit" class="registerbtn">Register</button>
+    </div>
+    </div>
+</body>
+
+</html>
